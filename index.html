@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>React</title>
+  </head>
+  <body>
+    <button class="btn__up">UP</button>
+    <header>
+      <div class="menu">
+        <img class="menu__logo" src="images/react.svg" height="50" alt="logo" />
+        <nav class="menu__link_wrap">
+          <a class="menu__link" href="#about">О React</a
+          ><a class="menu__link" href="#excellence">Преимущества</a
+          ><a class="menu__link" href="#minuses">Недостатки</a
+          ><a
+            class="menu__link"
+            href="https://ru.reactjs.org/docs/getting-started.html"
+            target="_blank"
+            >Документация</a
+          >
+        </nav>
+        <div class="menu__mobile"></div>
+      </div>
+      <div class="header">
+        <h1 class="header__title title">React</h1>
+        <p class="header__text">Добро пожаловать в реакт!</p>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="about section">
+        <h2 class="about__title title">Что такое React?</h2>
+        <p class="about__text text">
+          React — это декларативная, эффективная и гибкая JavaScript-библиотека
+          для создания пользовательских интерфейсов. Она позволяет вам собирать
+          сложный UI из маленьких изолированных кусочков кода, называемых
+          «компонентами».
+        </p>
+        <p class="about__text text">
+          React не является фреймворком – он даже не рассчитан исключительно для
+          web. Он используется для визуализации и в связке с другими
+          библиотеками. Например,
+          <a href="https://reactnative.dev/" target="_blank">React Native</a>
+          можно использовать для создания мобильных приложений;
+          <a href="https://opensource.fb.com/" target="_blank">React 360</a>
+          можно использовать для создания приложений виртуальной реальности;
+          помимо того есть и другие варианты.
+        </p>
+      </section>
+      <section id="excellence" class="excellence section">
+        <h2 class="excellence__title title">Преимущества React</h2>
+        <ul class="excellence__list list">
+          <li class="excellence__item list__item">
+            <b>Виртуальная объектная модель документа:</b>
+            <p class="excellence__text text">
+              Вместо медленных и неудобных взаимодействий непосредственно с
+              реальной объектной моделью документа, React взаимодействует с ее
+              облегченной копией - виртуальной DOM, поэтому реальная DOM
+              обновляется только после взаимодействия с виртуальной DOM.
+            </p>
+          </li>
+          <li class="excellence__item list__item">
+            <b>Повторное применение компонентов:</b>
+            <p class="excellence__text text">
+              При работе с ReactJS создаются многоразовые компоненты: чаще
+              всего, компонент пользовательского интерфейса можно использовать в
+              других частях кода или даже в разных проектах практически без
+              изменений.
+            </p>
+          </li>
+          <li class="excellence__item list__item">
+            <b>Нисходящий поток данных:</b>
+            <p class="excellence__text text">
+              Односторонний поток данных в React - еще одна очень полезная
+              функция. Такой поток данных также называют “сверху вниз” или “от
+              родителя к ребенку”. Другими словами в React-приложении данные
+              между элементами передаются только одним способом. Нисходящий
+              поток данных предотвращает ошибки, облегчает отладку.
+            </p>
+          </li>
+          <li class="excellence__item list__item">
+            <b>Браузерные инструменты React-разработчика:</b>
+            <p class="excellence__text text">
+              React Developer Tools - это бесплатное расширение для Chrome и
+              Firefox, предоставляющее целый набор виджетов проверки. Расширение
+              упрощает отладку, позволяя разработчикам не только искать по
+              списку всех компонентов, но и просматривать глубоко вложенные
+              компоненты прямо в браузере.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="minuses" class="minuses section">
+        <h2 class="minuses__title title">Недостатки React</h2>
+        <ul class="minuses__list list">
+          <li class="minuses__item list__item">
+            <b>Сложность поисковой оптимизации:</b>
+            <p class="minuses__text text">
+              Боты Google могут легко индексировать HTML-страницы. Однако с
+              JavaScript-страницами все уже не так гладко, ведь динамические
+              веб-приложения, в том числе созданные на React, проходят
+              усложненную процедуру индексации, в отличии от статических
+              веб-страниц. Таким образом, страница React-приложения может быть
+              проиндексирована неправильно или индексирование может занять
+              слишком много времени. Что один случай, что другой - оба заставят
+              ботов Google покинуть страницу сайта.
+            </p>
+          </li>
+          <li class="minuses__item list__item">
+            <b>Фокусировка на пользовательском интерфейсе:</b>
+            <p class="minuses__text text">
+              React - это не инструмент “все в одном” для создания целого
+              приложения. Следовательно, если вы следуете паттерну
+              проектирования “Модель-Представление-Контроллер”
+              (Model-View-Controller или MVC), то React будет отвечать только за
+              представление. Две другие части - модель и контроллер - создаются
+              при помощи дополнительных инструментов. Если вы применяете React в
+              проекте, то вам потребуется интегрировать дополнительные
+              инструменты для маршрутизации, написания интерфейсов прикладного
+              программирования (Application Programming Interface или API) и
+              других частей полноценного веб-приложения.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer section">
+      <a class="footer__link" href="https://ru.reactjs.org/" target="_blank"
+        ><img
+          class="footer__img"
+          src="images/react.svg"
+          height="100"
+          alt="React" /></a
+      ><a
+        class="footer__link"
+        href="https://opensource.facebook.com/projects/"
+        target="_blank"
+        ><img
+          class="footer__img"
+          src="images/facebookOpenSource.png"
+          height="100"
+          alt="Facebook" /></a
+      ><a
+        class="footer__link"
+        href="https://github.com/facebook/react"
+        target="_blank"
+        ><img
+          class="footer__img"
+          src="images/github.png"
+          height="100"
+          alt="GitHub"
+      /></a>
+    </footer>
+  </body>
+</html>
